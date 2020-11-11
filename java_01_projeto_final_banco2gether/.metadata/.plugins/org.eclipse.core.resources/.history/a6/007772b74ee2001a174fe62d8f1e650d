@@ -1,0 +1,19 @@
+package org.serratec.java2backend.projeto03.dominio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ContaController {
+	
+	@Autowired
+	ContaService contaService;
+	
+	@GetMapping("/contas")
+	public List<Conta> getAllContas(){
+		return contaService.listarContas();
+	}
+}	

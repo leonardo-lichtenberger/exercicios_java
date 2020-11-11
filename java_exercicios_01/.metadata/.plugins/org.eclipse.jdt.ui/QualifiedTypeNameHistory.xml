@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.banco2gether.usuarios.Cliente"/>
+<fullyQualifiedTypeName name="br.com.banco2gether.util.IOFiles"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.banco2gether.usuarios.Usuario"/>
+<fullyQualifiedTypeName name="br.com.banco2gether.usuarios.exception.IOFilesException"/>
+<fullyQualifiedTypeName name="org.serratec.java2backend.conta.service.ContaNotFoundException"/>
+</qualifiedTypeNameHistroy>

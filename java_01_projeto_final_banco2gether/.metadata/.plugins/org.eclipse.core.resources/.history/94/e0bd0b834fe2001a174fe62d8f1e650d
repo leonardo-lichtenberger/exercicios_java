@@ -1,0 +1,38 @@
+package org.serratec.java2backend.projeto03.dominio;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ContaService {
+
+		private List<Conta> listaDeContas = new ArrayList<Conta>();
+		
+		public List<Conta> listarContas(){
+			return listaDeContas;
+		}
+		
+		public ContaService() {
+			Conta c1 = new Conta();
+					c1.setNumero(123);
+				c1.setTitular("Joao");
+				c1.setSaldo(1000);
+				
+			Conta c2 = new Conta(321, "Maria", 1000);
+				
+			listaDeContas.add(c1);
+			listaDeContas.add(c2);
+		}
+
+		public Conta retornaConta(int numeroConta) {
+			
+		for (Conta conta : listaDeContas) {
+			if(conta.getNumero() == numeroConta)
+				return conta;
+		}
+		return null;
+		}
+}
